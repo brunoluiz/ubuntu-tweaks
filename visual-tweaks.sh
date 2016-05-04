@@ -11,4 +11,8 @@ dconf write /org/compiz/profiles/unity/plugins/unityshell/icon-size 24
 echo 'Icon size optimized!'
 
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
-echo 'Dock position optimized'
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-opacity 0.6
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ background-color '#000000dd'
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ dash-blur-experimental 0
+echo 'Dock optimized!'
+
