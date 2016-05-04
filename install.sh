@@ -9,13 +9,14 @@ fi
 # Set the path (you can modify if your distro store the fonts elsewhere)
 path='/usr/share/fonts/'
 
-# Move/Install the fonts
-mv msfonts/* $path
-mv macfonts/* $path
+apt-get update
 
-# Renew the fonts cache
-fc-cache -f -v
+# Install the fonts
+cp -R ms-fonts $path
+cp -R apple-fonts $path
 
 # Install other core fonts
 sudo apt-get install ttf-mscorefonts-installer -fy
 
+# Renew the fonts cache
+fc-cache -f -v
