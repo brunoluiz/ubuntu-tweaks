@@ -12,8 +12,8 @@ path='/usr/share/fonts/'
 apt-get update
 
 # Install the fonts
-cp -R ms-fonts $path
-cp -R apple-fonts $path
+cp -R fonts/ms-fonts $path
+cp -R fonts/apple-fonts $path
 
 # Install other core fonts
 sudo apt-get install ttf-mscorefonts-installer -fy
